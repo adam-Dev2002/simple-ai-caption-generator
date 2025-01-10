@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="text-center mb-4">Generated Caption</h1>
+<div class="text-center">
+    <img src="{{ image_url }}" class="img-fluid mb-3" alt="Uploaded Image">
+    <p class="lead"><strong>Caption:</strong> {{ caption }}</p>
+    <a href="/index" class="btn btn-secondary">Try Another Image</a>
+</div>
+{% endblock %}

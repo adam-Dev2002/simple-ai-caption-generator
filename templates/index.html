@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="text-center mb-4">Upload an Image to Generate a Caption</h1>
+<form action="/index" method="POST" enctype="multipart/form-data" class="text-center">
+    <div class="mb-3">
+        <input type="file" name="file" class="form-control" accept="image/*" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Generate Caption</button>
+</form>
+{% endblock %}
